@@ -1,0 +1,12 @@
+{
+    "connections": [
+        {
+            "name": "Iris",
+            "pronouns": "They/Them",
+            "company": "Boulderz",
+            "jobTittle": "Bouldering Athlete",
+            "description": "Friendly and hilghly active. met at bouldering gym"
+        }
+    ],
+    "name": "My network"
+}

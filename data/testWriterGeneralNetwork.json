@@ -1,0 +1,22 @@
+{
+    "numOfConnections": 2,
+    "name": "My network",
+    "connections": [
+        {
+            "name": "John",
+            "description": "Friendly neighberhood animator! loves to draw.",
+            "pronouns": "He/Him",
+            "company": "Atomic",
+            "jobTittle": "Animator",
+            "hobbiesSet": []
+        },
+        {
+            "name": "Iris",
+            "description": "Friendly and hilghly active. met at bouldering gym",
+            "pronouns": "They/Them",
+            "company": "Boulderz",
+            "jobTittle": "Bouldering Athlete",
+            "hobbiesSet": []
+        }
+    ]
+}

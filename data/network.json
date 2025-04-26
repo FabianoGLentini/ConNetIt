@@ -1,0 +1,54 @@
+{
+    "numOfConnections": 6,
+    "name": "Fabiano",
+    "connections": [
+        {
+            "name": "John",
+            "description": "Friendly neighberhood animator! loves to draw.",
+            "pronouns": "He/Him",
+            "company": "Atomic",
+            "jobTittle": "Animator",
+            "hobbiesSet": []
+        },
+        {
+            "name": "Iris",
+            "description": "Friendly and hilghly active. met at bouldering gym",
+            "pronouns": "They/Them",
+            "company": "Boulderz",
+            "jobTittle": "Bouldering Athlete",
+            "hobbiesSet": []
+        },
+        {
+            "name": "Eric",
+            "description": "Friendly and hilghly active. met at bouldering gym",
+            "pronouns": "They/Them",
+            "company": "Boulderz",
+            "jobTittle": "Bouldering Athlete",
+            "hobbiesSet": []
+        },
+        {
+            "name": "Cool",
+            "description": "da and hilghly active. met at bouldering gym",
+            "pronouns": "They/Them",
+            "company": "ya",
+            "jobTittle": "yo Athlete",
+            "hobbiesSet": []
+        },
+        {
+            "name": "q",
+            "description": "e",
+            "pronouns": "w",
+            "company": "w",
+            "jobTittle": "w",
+            "hobbiesSet": []
+        },
+        {
+            "name": "d",
+            "description": "d",
+            "pronouns": "d",
+            "company": "d",
+            "jobTittle": "d",
+            "hobbiesSet": []
+        }
+    ]
+}

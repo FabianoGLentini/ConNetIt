@@ -1,0 +1,19 @@
+{
+    "connections": [
+        {
+            "name": "John",
+            "pronouns": "He/Him",
+            "company": "Atomic",
+            "jobTittle": "Animator",
+            "description": "Friendly neighberhood animator! loves to draw."
+        },
+        {
+            "name": "Iris",
+            "pronouns": "They/Them",
+            "company": "Boulderz",
+            "jobTittle": "Bouldering Athlete",
+            "description": "Friendly and hilghly active. met at bouldering gym"
+        }
+    ],
+    "name": "My work room"
+}
