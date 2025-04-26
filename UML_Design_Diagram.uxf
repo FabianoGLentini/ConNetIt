@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>500</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+ConnectionField
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>815</x>
+      <y>435</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Connection
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>450</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Event
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>375</x>
+      <y>450</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>EventLog
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>975</x>
+      <y>510</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Hobbies
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>975</x>
+      <y>435</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Hobby
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>665</x>
+      <y>435</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Network
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>325</x>
+      <y>315</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>JsonReader
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>325</x>
+      <y>360</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>JsonWriter
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>665</x>
+      <y>295</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Writable
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>515</x>
+      <y>505</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>AddEditConnectionUI
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>895</x>
+      <y>345</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>EditMenuUI
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>515</x>
+      <y>300</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Launcher
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>515</x>
+      <y>345</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>MaimMenuUI
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>530</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>NetworkListUI
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>290</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>TerminalLaucher
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>335</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>TerminalNetworkMangaer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>325</y>
+      <w>15</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>400</y>
+      <w>170</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;320.0;10.0;320.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>460</y>
+      <w>75</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>915</x>
+      <y>445</y>
+      <w>70</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1025</x>
+      <y>465</y>
+      <w>25</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>765</x>
+      <y>450</y>
+      <w>60</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>565</x>
+      <y>460</y>
+      <w>110</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>890</x>
+      <y>375</y>
+      <w>65</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1</panel_attributes>
+    <additional_attributes>110.0;10.0;110.0;60.0;10.0;60.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>565</x>
+      <y>375</y>
+      <w>110</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0;200.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>425</x>
+      <y>325</y>
+      <w>100</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;
+m2=1
+</panel_attributes>
+    <additional_attributes>180.0;70.0;90.0;70.0;90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>425</x>
+      <y>355</y>
+      <w>55</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1</panel_attributes>
+    <additional_attributes>90.0;10.0;90.0;50.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>615</x>
+      <y>355</y>
+      <w>255</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0,1</panel_attributes>
+    <additional_attributes>10.0;10.0;470.0;10.0;470.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>465</y>
+      <w>20</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>735</x>
+      <y>465</y>
+      <w>130</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;50.0;220.0;50.0;220.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>580</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>RIP </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>325</y>
+      <w>65</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;60.0;70.0;60.0;70.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>350</y>
+      <w>35</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;50.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>215</x>
+      <y>365</y>
+      <w>495</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0;960.0;110.0;960.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>365</y>
+      <w>605</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0,1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;1170.0;70.0;1170.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>375</x>
+      <y>515</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>LogPrinting
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
