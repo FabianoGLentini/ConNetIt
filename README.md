@@ -1,6 +1,6 @@
 # ConNetIt
 
-**ConNetIt** is a personal connection manager and networking diary designed to help users remember, organize, and nurture their professional and personal relationships. Unlike traditional platforms like LinkedIn, which prioritize static profiles, ConNetIt focuses on the *context* and *quality* of your interactions — allowing you to tag, describe, and track meaningful details about the people you meet.
+**ConNetIt** is a personal connection manager and networking diary designed to help users remember, organize, and nurture their professional and personal relationships. Unlike traditional platforms like LinkedIn, which prioritize static profiles, ConNetIt focuses on the *context* and *quality* of your interactions, allowing you to tag, describe, and track meaningful details about the people you meet.
 
 ---
 
