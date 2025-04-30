@@ -6,9 +6,9 @@
 
 ## Figma Design Preview
 
-Attached here is the [Figma design]() I created that serves as the foundation for the development of this app. (Implementation of design in Progress)
+Attached here is the [Figma design](https://github.com/FabianoGLentini/ConNetIt/blob/main/ConNetIt%20Design.png) I created that serves as the foundation for the development of this app. (Implementation of design in Progress)
 
-![Design]()
+![Design](https://github.com/FabianoGLentini/ConNetIt/blob/main/ConNetIt%20Design.png)
 
 ---
 
