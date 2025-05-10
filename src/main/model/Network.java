@@ -15,6 +15,10 @@ public class Network implements Writable {
     private List<Connection> connections;
     private String name;
 
+    // TODO MUST FIND OUT how to set up account loading etc
+
+    // TODO MUST FIND OUT mango db set up for loading and saving account
+
     // EFFECTS: creates Network, holds Connection List
     public Network(String name) {
         this.name = name;
