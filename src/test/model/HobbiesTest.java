@@ -18,10 +18,9 @@ public class HobbiesTest {
     private Hobby climbing;
     private Hobby skate;
 
-    // TODO insure to test swap HashMap test to HashSet
-
     @BeforeEach
     void runBefore() {
+
         testHobbies = new Hobbies();
         testHobbiesWithHobbiesTracked = new Hobbies();
         testHasMapList = new HashMap<>();

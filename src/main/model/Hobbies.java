@@ -6,7 +6,7 @@ import java.util.HashMap;
 // insure no duplicates of hobbie instances,
 // accure and handle hobbie creation and assignment when called oppon
 public class Hobbies {
-    private HashMap<String, Hobby> hobbyTracker; //TODO Use HashSet
+    private HashMap<String, Hobby> hobbyTracker;
 
     // EFFECTS: construcor creates a single Hobbies to track Hobbie creation.
     // This is to prevent duplication of similarly named Hobbie instances
@@ -31,14 +31,13 @@ public class Hobbies {
         return hobbyTracker.get(trackId);
     }
 
-    // REQUIRES: !existingHobby() // TODO No need if a Set
+    // REQUIRES: !existingHobby()
     // MODDIFIES: this
     // EFFECTS: creates new hobbie from title & add to hobbyTracker
     public Hobby createNewHobby(String title) {
         Hobby hobby = new Hobby(title);
 
-        this.addHobbieToTrack(title, hobby); // TODO rework for Set
-
+        this.addHobbieToTrack(title, hobby);
         return hobby;
     }
 
@@ -51,14 +50,14 @@ public class Hobbies {
     }
 
     // EFFECTS: return Hasmap of hobbieTrack
-    public HashMap<String, Hobby> getTrackedHobbies() { // TODO rework for Set
+    public HashMap<String, Hobby> getTrackedHobbies() {
 
         return hobbyTracker;
     }
 
     // MODDIFIES: this
     // EFFECTS: sets hobbieTrack for testing purposes
-    public void setTrackedHobbies(HashMap<String, Hobby> hobbyTracker) { // TODO rework for Set
+    public void setTrackedHobbies(HashMap<String, Hobby> hobbyTracker) {
         this.hobbyTracker = hobbyTracker;
     }
 
