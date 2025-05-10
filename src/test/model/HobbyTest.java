@@ -15,19 +15,19 @@ public class HobbyTest {
 
     @Test
     void testConstructor() {
-        assertEquals("Hicking", testHobbie.getTittle());
+        assertEquals("Hicking", testHobbie.getTitle());
     }
 
     @Test
     void testGetTittle() {
-        assertEquals("Hicking", testHobbie.getTittle());
+        assertEquals("Hicking", testHobbie.getTitle());
     }
 
     @Test
     void testSetTittle() {
-        assertEquals("Hicking", testHobbie.getTittle());
-        testHobbie.setTittle("Running");
-        assertEquals("Running", testHobbie.getTittle());
+        assertEquals("Hicking", testHobbie.getTitle());
+        testHobbie.setTitle("Running");
+        assertEquals("Running", testHobbie.getTitle());
     }
 
 }

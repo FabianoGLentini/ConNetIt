@@ -4,6 +4,7 @@ package model;
 // A class representing Hobby, with hobby tittle
 public class Hobby {
     private String tittle;
+    // TODO add color field
 
 
     // EFFECTS: create Hobbie instance
@@ -12,13 +13,13 @@ public class Hobby {
     }
 
     // EFFECT: returns Hobbie tittle
-    public String getTittle() {
+    public String getTitle() {
         return tittle;
     }
 
     // MODIFFIES: this
     // EFFECT: sets Hobbie tittle
-    public void setTittle(String tittle) {
+    public void setTitle(String tittle) {
         this.tittle = tittle;
 
     }

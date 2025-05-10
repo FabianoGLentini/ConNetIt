@@ -18,7 +18,7 @@ public class Network implements Writable {
     // EFFECTS: creates Network, holds Connection List
     public Network(String name) {
         this.name = name;
-        numOfConnections = 0;
+        numOfConnections = 0; // TODO should I keep constant track of num con it or should it be at method?
         connections = new ArrayList<>();
     }
 
@@ -50,7 +50,7 @@ public class Network implements Writable {
         // EventLog.getInstance()
         // .logEvent(new Event("Get list of connections from Network account"));
 
-        return Collections.unmodifiableList(connections);
+        return Collections.unmodifiableList(connections); // TODO why unmodifiable list ..?
     }
 
     // REQUIRES: !inList()
@@ -59,6 +59,9 @@ public class Network implements Writable {
     public void addConnection(Connection connection) {
         EventLog.getInstance()
                 .logEvent(new Event("Added " + connection.getField(ConnectionField.NAME) + " to network"));
+        // TODO turn connection name into title case
+
+        // TODO try catch of title case version of inlist..?
 
         connections.add(connection);
         numOfConnections += 1;

@@ -18,6 +18,8 @@ public class HobbiesTest {
     private Hobby climbing;
     private Hobby skate;
 
+    // TODO insure to test swap HashMap test to HashSet
+
     @BeforeEach
     void runBefore() {
         testHobbies = new Hobbies();
@@ -67,7 +69,7 @@ public class HobbiesTest {
 
     @Test
     void testCreateNewHobby() {
-        assertEquals("Skate", testHobbies.createNewHobby("Skate").getTittle());
+        assertEquals("Skate", testHobbies.createNewHobby("Skate").getTitle());
         testHasMapList.put("skate", skate);
         assertEquals(1, testHobbies.getTrackedHobbies().size());
         testHobbies.createNewHobby("Climbing");

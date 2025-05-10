@@ -34,6 +34,7 @@ public class NetworkTest {
         testNetwork2.setConnections(twoConnectionsList);
         testNetwork2.setnumOfConnections(2);
     }
+    
 
     /* -----Simple Getter Method Testing----- */
 
@@ -89,6 +90,10 @@ public class NetworkTest {
 
     @Test
     void testAddConnection() {
+
+        // TODO insure you add test case for title case change
+
+        // TODO add try catch test if indeed implemented
         testNetwork2.addConnection(con03);
         assertEquals(3, testNetwork2.getConnections().size());
         assertEquals(3, testNetwork2.getConnectionNum());
