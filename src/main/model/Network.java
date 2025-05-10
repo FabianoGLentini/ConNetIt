@@ -15,6 +15,8 @@ public class Network implements Writable {
     private List<Connection> connections;
     private String name;
 
+    // TODO look up if network should be the center control holding all values of classes to manage and access? is that normal
+
     // TODO MUST FIND OUT how to set up account loading etc
 
     // TODO MUST FIND OUT mango db set up for loading and saving account

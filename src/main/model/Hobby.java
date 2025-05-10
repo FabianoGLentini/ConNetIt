@@ -6,8 +6,7 @@ import javax.swing.text.AttributeSet.ColorAttribute;
 public class Hobby {
     private String title;
     private ColorAttribute color;
-    // TODO add color field
-
+    // TODO Create Enum for colors in new field list hobbies class?
 
     // EFFECTS: create Hobbie instance
     public Hobby(String title) {
@@ -29,7 +28,7 @@ public class Hobby {
 
     // MODIFFIES: this
     // EFFECTS: sets color
-    public void setColor(){
-        // TODO 
+    public void setColor() {
+        // TODO
     }
 }

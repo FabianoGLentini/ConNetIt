@@ -34,6 +34,7 @@ public class HobbyTest {
     @Test
     void testSetColor(){
         // TODO
+        
     }
 
 }
