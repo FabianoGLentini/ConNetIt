@@ -15,6 +15,7 @@ public class HobbyTest {
 
     @Test
     void testConstructor() {
+        // TODO test default color result
         assertEquals("Hicking", testHobbie.getTitle());
     }
 
@@ -28,6 +29,11 @@ public class HobbyTest {
         assertEquals("Hicking", testHobbie.getTitle());
         testHobbie.setTitle("Running");
         assertEquals("Running", testHobbie.getTitle());
+    }
+
+    @Test
+    void testSetColor(){
+        // TODO
     }
 
 }

@@ -1,15 +1,18 @@
 package model;
 
+import javax.swing.text.AttributeSet.ColorAttribute;
 
 // A class representing Hobby, with hobby title
 public class Hobby {
     private String title;
+    private ColorAttribute color;
     // TODO add color field
 
 
     // EFFECTS: create Hobbie instance
     public Hobby(String title) {
         this.title = title;
+        this.color = null; // TODO add default color
     }
 
     // EFFECT: returns Hobbie title
@@ -24,4 +27,9 @@ public class Hobby {
 
     }
 
+    // MODIFFIES: this
+    // EFFECTS: sets color
+    public void setColor(){
+        // TODO 
+    }
 }
