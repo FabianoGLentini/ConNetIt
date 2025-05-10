@@ -3,19 +3,19 @@
     "name": "My network",
     "connections": [
         {
+            "jobTitle": "Animator",
             "name": "John",
             "description": "Friendly neighberhood animator! loves to draw.",
             "pronouns": "He/Him",
             "company": "Atomic",
-            "jobTittle": "Animator",
             "hobbiesSet": []
         },
         {
+            "jobTitle": "Bouldering Athlete",
             "name": "Iris",
             "description": "Friendly and hilghly active. met at bouldering gym",
             "pronouns": "They/Them",
             "company": "Boulderz",
-            "jobTittle": "Bouldering Athlete",
             "hobbiesSet": []
         }
     ]

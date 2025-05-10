@@ -108,7 +108,7 @@ public class EditMenuUI extends JFrame implements ActionListener {
     // EFFECTS: creates jobTittle panel
     public JPanel createJobTittlePanel() {
         jobTittle = new JTextField(20);
-        jobTittle.setText(connection.getField(ConnectionField.JOBTITTLE));
+        jobTittle.setText(connection.getField(ConnectionField.JOBTITLE));
 
         return createPanelField("jobTittle: ", jobTittle);
     }
@@ -202,7 +202,7 @@ public class EditMenuUI extends JFrame implements ActionListener {
             connection.setField(ConnectionField.NAME, nameInput);
             connection.setField(ConnectionField.PRONOUNS, pronounsInput);
             connection.setField(ConnectionField.COMPANY, companyInput);
-            connection.setField(ConnectionField.JOBTITTLE, jobTittleInput);
+            connection.setField(ConnectionField.JOBTITLE, jobTittleInput);
             connection.setField(ConnectionField.DESCRIPTION, descriptionInput);
 
             frame.dispose();

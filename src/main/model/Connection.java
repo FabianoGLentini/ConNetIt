@@ -8,21 +8,21 @@ import persistence.Writable;
 
 import java.util.HashSet;
 
-// A class representing connection card with name, pronouns, jobTittle & description
+// A class representing connection card with name, pronouns, jobTitle & description
 public class Connection implements Writable {
     private String name;
     private String pronouns;
     private String company;
-    private String jobTittle;
+    private String jobTitle;
     private String description;
     private Set<Hobby> hobbiesSet;
 
     // EFFECTS: create connection profile, with empty hobbiesTags list
-    public Connection(String name, String pronouns, String company, String jobTittle, String description) {
+    public Connection(String name, String pronouns, String company, String jobTitle, String description) {
         this.name = name;
         this.pronouns = pronouns;
         this.company = company;
-        this.jobTittle = jobTittle;
+        this.jobTitle = jobTitle;
         this.description = description;
         this.hobbiesSet = new HashSet<>();
 
@@ -39,8 +39,8 @@ public class Connection implements Writable {
                 return this.pronouns;
             case COMPANY:
                 return this.company;
-            case JOBTITTLE:
-                return this.jobTittle;
+            case JOBTITLE:
+                return this.jobTitle;
             case DESCRIPTION:
                 return this.description;
             default:
@@ -63,9 +63,9 @@ public class Connection implements Writable {
             case COMPANY:
                 EventLog.logEvent("Updated Company:" + this.company + " to " + value);
                 return this.company = value;
-            case JOBTITTLE:
-                EventLog.logEvent("Updated Job Title:" + this.jobTittle + " to " + value);
-                return this.jobTittle = value;
+            case JOBTITLE:
+                EventLog.logEvent("Updated Job Title:" + this.jobTitle + " to " + value);
+                return this.jobTitle = value;
             case DESCRIPTION:
                 EventLog.logEvent("Updated Job Description: \n" + this.description + "\n To: \n" + value);
                 return this.description = value;
@@ -85,7 +85,7 @@ public class Connection implements Writable {
         json.put("name", name);
         json.put("pronouns", pronouns);
         json.put("company", company);
-        json.put("jobTittle", jobTittle);
+        json.put("jobTitle", jobTitle);
         json.put("description", description);
         json.put("hobbiesSet", hobbiesSet);
 

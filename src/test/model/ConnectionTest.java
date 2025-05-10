@@ -23,7 +23,7 @@ public class ConnectionTest {
         assertEquals("John", testConnection.getField(ConnectionField.NAME));
         assertEquals("He/Him", testConnection.getField(ConnectionField.PRONOUNS));
         assertEquals("Atomic", testConnection.getField(ConnectionField.COMPANY));
-        assertEquals("Animator", testConnection.getField(ConnectionField.JOBTITTLE));
+        assertEquals("Animator", testConnection.getField(ConnectionField.JOBTITLE));
         assertEquals("Friendly neighberhood animator! loves to draw.",
                 testConnection.getField(ConnectionField.DESCRIPTION));
 
@@ -49,7 +49,7 @@ public class ConnectionTest {
 
     @Test
     void testGetJobTittle() {
-        assertEquals("Bouldering Athlete", testConnection.getField(ConnectionField.JOBTITTLE));
+        assertEquals("Bouldering Athlete", testConnection.getField(ConnectionField.JOBTITLE));
 
     }
 
@@ -88,9 +88,9 @@ public class ConnectionTest {
 
     @Test
     void testSetJobTittle() {
-        assertEquals("Bouldering Athlete", testConnection.getField(ConnectionField.JOBTITTLE));
-        testConnection.setField(ConnectionField.JOBTITTLE, "Figure Skater");
-        assertEquals("Figure Skater", testConnection.getField(ConnectionField.JOBTITTLE));
+        assertEquals("Bouldering Athlete", testConnection.getField(ConnectionField.JOBTITLE));
+        testConnection.setField(ConnectionField.JOBTITLE, "Figure Skater");
+        assertEquals("Figure Skater", testConnection.getField(ConnectionField.JOBTITLE));
 
     }
 

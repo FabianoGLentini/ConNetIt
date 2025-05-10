@@ -14,7 +14,7 @@ public class JsonTest {
         assertEquals(name, connection.getField(ConnectionField.NAME));
         assertEquals(pronouns, connection.getField(ConnectionField.PRONOUNS));
         assertEquals(company, connection.getField(ConnectionField.COMPANY));
-        assertEquals(jobTittle, connection.getField(ConnectionField.JOBTITTLE));
+        assertEquals(jobTittle, connection.getField(ConnectionField.JOBTITLE));
         assertEquals(description, connection.getField(ConnectionField.DESCRIPTION));
 
     }

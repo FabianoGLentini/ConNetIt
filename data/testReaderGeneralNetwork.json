@@ -4,14 +4,14 @@
             "name": "John",
             "pronouns": "He/Him",
             "company": "Atomic",
-            "jobTittle": "Animator",
+            "jobTitle": "Animator",
             "description": "Friendly neighberhood animator! loves to draw."
         },
         {
             "name": "Iris",
             "pronouns": "They/Them",
             "company": "Boulderz",
-            "jobTittle": "Bouldering Athlete",
+            "jobTitle": "Bouldering Athlete",
             "description": "Friendly and hilghly active. met at bouldering gym"
         }
     ],

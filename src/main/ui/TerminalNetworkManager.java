@@ -271,7 +271,7 @@ public class TerminalNetworkManager {
         System.out.println("Name:" + currSelected.getField(ConnectionField.NAME));
         System.out.println("Pronouns:" + currSelected.getField(ConnectionField.PRONOUNS));
         System.out.println("Company:" + currSelected.getField(ConnectionField.COMPANY));
-        System.out.println("Job Tittle:" + currSelected.getField(ConnectionField.JOBTITTLE));
+        System.out.println("Job Tittle:" + currSelected.getField(ConnectionField.JOBTITLE));
         System.out.println("Description:" + currSelected.getField(ConnectionField.DESCRIPTION));
 
         connectionViewMenu();
@@ -318,7 +318,7 @@ public class TerminalNetworkManager {
                 editConnectionVar(ConnectionField.COMPANY, "compnay");
                 break;
             case "j":
-                editConnectionVar(ConnectionField.JOBTITTLE, "job tittle");
+                editConnectionVar(ConnectionField.JOBTITLE, "job tittle");
                 break;
             case "d":
                 editConnectionVar(ConnectionField.DESCRIPTION, "discription");

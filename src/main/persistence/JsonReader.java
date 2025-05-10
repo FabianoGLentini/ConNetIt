@@ -70,10 +70,10 @@ public class JsonReader {
         String name = jsonObject.getString("name");
         String pronouns = jsonObject.getString("pronouns");
         String company = jsonObject.getString("company");
-        String jobTittle = jsonObject.getString("jobTittle");
+        String jobTitle = jsonObject.getString("jobTitle");
         String description = jsonObject.getString("description");
 
-        Connection connection = new Connection(name, pronouns, company, jobTittle, description);
+        Connection connection = new Connection(name, pronouns, company, jobTitle, description);
         n.addConnection(connection);
     }
 

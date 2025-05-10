@@ -93,7 +93,7 @@ public class NetworkListUI extends JFrame {
         JLabel name = createInfo("Name: ", connection.getField(ConnectionField.NAME));
         card.add(name, BorderLayout.LINE_END);
 
-        JLabel jobTitle = createInfo("Job Title: ", connection.getField(ConnectionField.JOBTITTLE));
+        JLabel jobTitle = createInfo("Job Title: ", connection.getField(ConnectionField.JOBTITLE));
         card.add(jobTitle, BorderLayout.LINE_END);
 
         createEditButton(card, connection);

@@ -16,36 +16,36 @@ public class Hobbies {
 
     // EFFECTS: adds new hobby with associated name in lowercase
     // into hobbieTrack. Prevents duplicates of hobbie
-    public void addHobbieToTrack(String tittle, Hobby hobby) {
-        String trackId = tittle.toLowerCase();
+    public void addHobbieToTrack(String title, Hobby hobby) {
+        String trackId = title.toLowerCase();
 
         hobbyTracker.put(trackId, hobby);
 
     }
 
     // REQUIRES: existingHobby()
-    // EFFECTS: returns hobby from map based on tittle.
-    public Hobby getHobbyFromTrack(String tittle) {
-        String trackId = tittle.toLowerCase();
+    // EFFECTS: returns hobby from map based on title.
+    public Hobby getHobbyFromTrack(String title) {
+        String trackId = title.toLowerCase();
 
         return hobbyTracker.get(trackId);
     }
 
     // REQUIRES: !existingHobby() // TODO No need if a Set
     // MODDIFIES: this
-    // EFFECTS: creates new hobbie from tittle & add to hobbyTracker
-    public Hobby createNewHobby(String tittle) {
-        Hobby hobby = new Hobby(tittle);
+    // EFFECTS: creates new hobbie from title & add to hobbyTracker
+    public Hobby createNewHobby(String title) {
+        Hobby hobby = new Hobby(title);
 
-        this.addHobbieToTrack(tittle, hobby); // TODO rework for Set
+        this.addHobbieToTrack(title, hobby); // TODO rework for Set
 
         return hobby;
     }
 
     // EFFECTS: checks if Hobbie with associate String name already exist return
     // true if yes else false
-    public boolean existingHobby(String tittle) {
-        String trackId = tittle.toLowerCase();
+    public boolean existingHobby(String title) {
+        String trackId = title.toLowerCase();
 
         return hobbyTracker.containsKey(trackId);
     }

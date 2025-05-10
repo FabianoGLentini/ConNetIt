@@ -1,5 +1,5 @@
 package model;
 
 public enum ConnectionField {
-    NAME, PRONOUNS, COMPANY, JOBTITTLE, DESCRIPTION;
+    NAME, PRONOUNS, COMPANY, JOBTITLE, DESCRIPTION;
 }
