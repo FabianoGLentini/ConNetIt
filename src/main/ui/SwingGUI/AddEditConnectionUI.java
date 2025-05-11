@@ -1,4 +1,4 @@
-package ui;
+package ui.SwingGUI;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -17,10 +17,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import model.Connection;
-import model.ConnectionField;
+import model.Network;
 
-// window to edits current connection fields
-public class EditMenuUI extends JFrame implements ActionListener {
+// Display the add/edit connection option
+public class AddEditConnectionUI extends JFrame implements ActionListener {
     private JFrame frame;
     private JTextField name;
     private JTextField pronouns;
@@ -31,14 +31,13 @@ public class EditMenuUI extends JFrame implements ActionListener {
     private JPanel section;
     private JPanel btnSection;
     private JButton btnConfirm;
-    private Connection connection;
+    private Network network;
 
-    // EFFECTS: set up window to edit connection
-    public EditMenuUI(Connection connection) {
-        this.connection = connection;
-
+    // EFFECTS: set up window to add connection
+    AddEditConnectionUI(Network network) {
+        this.network = network;
         frame = new JFrame();
-        frame.setTitle("Connection");
+        frame.setTitle("Network");
 
         frame.setLayout(new BorderLayout());
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -50,7 +49,6 @@ public class EditMenuUI extends JFrame implements ActionListener {
 
         frame.add(fullOptions);
         frame.setVisible(true);
-
     }
 
     // MODIFIES: this
@@ -81,7 +79,6 @@ public class EditMenuUI extends JFrame implements ActionListener {
     // EFFECTS: creates name panel
     public JPanel createName() {
         name = new JTextField(20);
-        name.setText(connection.getField(ConnectionField.NAME));
 
         return createPanelField("Name: ", name);
     }
@@ -90,7 +87,6 @@ public class EditMenuUI extends JFrame implements ActionListener {
     // EFFECTS: creates pronoun panel
     public JPanel createPonoun() {
         pronouns = new JTextField(20);
-        pronouns.setText(connection.getField(ConnectionField.PRONOUNS));
 
         return createPanelField("pronouns: ", pronouns);
     }
@@ -99,7 +95,6 @@ public class EditMenuUI extends JFrame implements ActionListener {
     // EFFECTS: creates company panel
     public JPanel createCompany() {
         company = new JTextField(20);
-        company.setText(connection.getField(ConnectionField.COMPANY));
 
         return createPanelField("company: ", company);
     }
@@ -108,7 +103,6 @@ public class EditMenuUI extends JFrame implements ActionListener {
     // EFFECTS: creates jobTittle panel
     public JPanel createJobTittlePanel() {
         jobTittle = new JTextField(20);
-        jobTittle.setText(connection.getField(ConnectionField.JOBTITLE));
 
         return createPanelField("jobTittle: ", jobTittle);
     }
@@ -117,7 +111,6 @@ public class EditMenuUI extends JFrame implements ActionListener {
     // EFFECTS: creates Description panel
     public JPanel createPonounDescription() {
         description = new JTextField(20);
-        description.setText(connection.getField(ConnectionField.DESCRIPTION));
 
         return createPanelField("Description: ", description);
     }
@@ -199,11 +192,10 @@ public class EditMenuUI extends JFrame implements ActionListener {
             String jobTittleInput = jobTittle.getText();
             String descriptionInput = description.getText();
 
-            connection.setField(ConnectionField.NAME, nameInput);
-            connection.setField(ConnectionField.PRONOUNS, pronounsInput);
-            connection.setField(ConnectionField.COMPANY, companyInput);
-            connection.setField(ConnectionField.JOBTITLE, jobTittleInput);
-            connection.setField(ConnectionField.DESCRIPTION, descriptionInput);
+            Connection newConnection = new Connection(nameInput, pronounsInput, companyInput, jobTittleInput,
+                    descriptionInput);
+
+            network.addConnection(newConnection);
 
             frame.dispose();
         }

@@ -1,4 +1,4 @@
-package ui;
+package ui.TerminalUi;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
