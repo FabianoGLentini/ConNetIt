@@ -10,7 +10,6 @@ export default function Home() {
       <NavBar />
       <Network />
       <SearchFilter />
-      
     </div>
   );
 }

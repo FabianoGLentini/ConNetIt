@@ -20,8 +20,12 @@ const ConnectionCard = () => {
 
       {/* Mid Section */}
       <section>
-        <span>Company TMP</span>
-        <span>Job Tittle TMP</span>
+        {/* TODO revise approach for displaying */}
+        <div>
+          <img src="" alt="profile img TMP" />
+          <span>Company TMP</span>
+          <span>Job Tittle TMP</span>
+        </div>
       </section>
 
       {/* Bottom Section */}
