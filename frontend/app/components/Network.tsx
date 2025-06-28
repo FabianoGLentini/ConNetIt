@@ -8,6 +8,7 @@ const Network = () => {
 
     // TODO figure out best way to set evnet listener for each card expand click and hoever effect
     <div>
+      TMP msg confirm Networks page fn
       {/* TODO call card components to create connections display list*/}
     </div>
   );
