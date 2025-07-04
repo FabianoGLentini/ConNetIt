@@ -5,7 +5,7 @@ import Image from "next/image";
 const NavBar = () => {
   return (
     // TODO revise div look into using that<></> maybe?
-    <div>
+    <nav>
       <div>
         <h2>Account Name</h2>
         <h4>Network</h4>
@@ -19,7 +19,7 @@ const NavBar = () => {
           height={24}
         />
       </button>
-    </div>
+    </nav>
   );
 };
 

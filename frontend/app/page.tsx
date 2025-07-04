@@ -1,5 +1,5 @@
 import Network from "./components/Network";
-import NavBar from "./components/NavBar";
+import NavBar from "./NavBar";
 import SearchFilter from "./components/SearchFilter";
 import ConnectionInfoDisplay from "./components/ConnectionInfoDisplay";
 
