@@ -7,7 +7,7 @@ export default function Home() {
   return (
     // TODO check if using fragment best practice
     // TODO how to properly lay out each section
-    <div data-theme="connetit" className="grid grid-cols-9">
+    <div data-theme="connetit" className="grid grid-cols-9 max-h-screen">
       {/* TODO left section */}
       <SearchFilter />
       <section className="col-span-8">

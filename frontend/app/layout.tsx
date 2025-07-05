@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="connetit">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body
+        className={`${inter.className} antialiased h-screen overflow-hidden flex flex-col`}
+      >
+        <main className="flex-1 overflow-hidden">{children}</main>
+      </body>
     </html>
   );
 }
