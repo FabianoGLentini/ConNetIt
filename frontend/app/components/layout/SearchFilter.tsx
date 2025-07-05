@@ -5,7 +5,7 @@ const SearchFilter = () => {
   return (
     // TODO implement should all be wrap in a div ?
     // TODO replace tmp's
-    <div>
+    <div className="col-span-1">
       <h1>ConNetIt</h1>
       {/* May search name or tag and dynamically...? filters list. Through inputed text */}
       <span>Search TMP</span>

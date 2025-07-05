@@ -5,7 +5,7 @@ import { BurgerIcon } from "./NavBar/BurgerIcon";
 
 const NavBar = () => {
   return (
-    <nav className="navbar bg-base-100 shadow-sm ">
+    <nav className="navbar bg-base-100 shadow-sm col-span-6">
       <div className="flex-2">
         {/* TODO remove button styling...? */}
         <h1 className="text-xl">ConNetIt</h1>
