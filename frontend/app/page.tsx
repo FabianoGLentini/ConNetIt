@@ -1,7 +1,7 @@
-// import Network from "./components/Network";
+import Network from "./components/layout/Network";
 import NavBar from "./components/layout/NavBar";
-// import SearchFilter from "./components/SearchFilter";
-// import ConnectionInfoDisplay from "./components/ConnectionInfoDisplay";
+// import SearchFilter from "./components/layout/SearchFilter";
+import ConnectionInfoDisplay from "./components/layout/ConnectionInfoDisplay";
 
 export default function Home() {
   return (
@@ -13,10 +13,10 @@ export default function Home() {
 
       {/* TODO mid section */}
       <NavBar />
-      {/* <Network /> */}
+      <Network />
 
       {/* TODO right section */}
-      {/* <ConnectionInfoDisplay /> */}
+      <ConnectionInfoDisplay />
     </div>
   );
 }
