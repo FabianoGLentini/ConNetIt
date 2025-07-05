@@ -8,7 +8,6 @@ const Network = () => {
 
     <section>
       <ul className="list bg-base-100 rounded-box shadow-md ">
-        <li className="p-4 pb-2 text-xs opacity-60 tracking-wide"></li>
         <li className="list-row">
           <div>
             <img
