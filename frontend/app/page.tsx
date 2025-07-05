@@ -7,16 +7,18 @@ export default function Home() {
   return (
     // TODO check if using fragment best practice
     // TODO how to properly lay out each section
-    <div>
+    <div data-theme="connetit">
       {/* TODO left section */}
       {/* <SearchFilter /> */}
-
       {/* TODO mid section */}
-      <NavBar />
-      <Network />
 
-      {/* TODO right section */}
-      <ConnectionInfoDisplay />
+      <NavBar />
+      <section className="grid grid-cols-1 md:grid-cols-4">
+        <div className="md:col-span-3">
+          <Network />
+        </div>
+        <ConnectionInfoDisplay />
+      </section>
     </div>
   );
 }

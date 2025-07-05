@@ -4,44 +4,18 @@ const ConnectionInfoDisplay = () => {
   return (
     // TODO implment
     // TODO deside if edit connnection will create new window...?
-    <div>
-      {/* Top Section */}
-      <section>
-        <h2>Name TMP</h2>
-        <img src="" alt="edit icon tmp" />
-      </section>
-
-      <img src="" alt="profile img TMP" />
-
-      {/* Info Seection */}
-      <section>
-        {/* TODO mayy adjust span for h tags instead...? */}
-        <span>
-          {" "}
-          Company:
-          {/* TODO name comapny var */}
-        </span>
-
-        <span>
-          Job Title:
-          {/* TODO job title var */}
-        </span>
-
-        <div>
-          {/* TODO met up description section plan */}
-          <h3>Met:</h3>
-          <p>text TMP</p>
+    <div className="hero bg-base-200 min-h-screen">
+      <div className="hero-content text-center">
+        <div className="max-w-md">
+          <h1 className="text-5xl font-bold">Hello there</h1>
+          <p className="py-6">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
+            a id nisi.
+          </p>
+          <button className="btn btn-primary">Get Started</button>
         </div>
-
-        <div>
-          {/* TODO add descp plan, is it needed ..? */}
-          <h3>Additoinal Descritpion:</h3>
-          <p>text TMP</p>
-        </div>
-      </section>
-
-      {/* TODO bottom section */}
-      <section>{/* TODO star dissplay lvl */}</section>
+      </div>
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Network = () => {
     // TODO card display, so call opon car method and lay it out vertically in fix sizing?
 
     // TODO figure out best way to set evnet listener for each card expand click and hoever effect
-    <ul className="list bg-base-100 rounded-box shadow-md">
+    <ul className="list bg-base-100 rounded-box shadow-md ">
       <li className="p-4 pb-2 text-xs opacity-60 tracking-wide"></li>
 
       <li className="list-row">
