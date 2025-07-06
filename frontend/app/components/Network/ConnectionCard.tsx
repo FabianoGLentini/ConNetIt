@@ -1,59 +1,101 @@
 import React from "react";
-// TODO import relevant assets
+import { Avatar } from "./ConnectionCard/Avatar";
 
-const ConnectionCard = () => {
-  return (
-    <ul className="list bg-base-100 rounded-box shadow-md ">
-      <li className="list-row">
-        <div>
-          <img
-            className="size-10 rounded-box"
-            src="https://img.daisyui.com/images/profile/demo/3@94.webp"
-          />
-        </div>
-        <div>
-          <div>Sabrino Gardener</div>
-          <div className="text-xs uppercase font-semibold opacity-60">
-            Cappuccino
-          </div>
-        </div>
-        <button className="btn btn-square btn-ghost">
-          <svg
-            className="size-[1.2em]"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-          >
-            <g
-              strokeLinejoin="round"
-              strokeLinecap="round"
-              strokeWidth="2"
-              fill="none"
-              stroke="currentColor"
-            >
-              <path d="M6 3L20 12 6 21 6 3z"></path>
-            </g>
-          </svg>
-        </button>
-        <button className="btn btn-square btn-ghost">
-          <svg
-            className="size-[1.2em]"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-          >
-            <g
-              strokeLinejoin="round"
-              strokeLinecap="round"
-              strokeWidth="2"
-              fill="none"
-              stroke="currentColor"
-            >
-              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
-            </g>
-          </svg>
-        </button>
-      </li>
-    </ul>
-  );
+type Props = {
+  name?: string;
+  company: string;
+  jobTitle: string;
+  avatarUrl: string;
+  connectionLvl: number;
+  tags: string[];
 };
+export default function ConnectionCard(
+  name,
+  company,
+  jobTitle,
+  avatarUrl,
+  connectionLvl,
+  tags
+) {
+  return (
+    <div className="w-[700px] max-w-full rounded-[18px] border border-[#C4CBDC]/60 bg-white shadow-sm px-6 py-4">
+      {/* top row ─────────────────────────────────────────────── */}
+      <div className="flex items-start gap-4">
+        {/* avatar */}
+        <Avatar src={avatarUrl} />
+        <img src="public/default-avatar.svg" />
 
-export default ConnectionCard;
+        {/* name + company */}
+        <div className="flex-1">
+          <h3 className="font-semibold text-lg leading-tight">Generic Name</h3>
+          <p className="text-sm leading-tight">Company: Name</p>
+          <p className="text-sm text-[#1F2937]/70 leading-tight">
+            Job Title: Name
+          </p>
+        </div>
+
+        {/* external-link icon */}
+        <button
+          aria-label="Open profile"
+          className="text-[#6A9BE4] hover:text-[#3C79D5]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M14 3h7v7m0-7L10 14m-1 7h-7v-7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* rating row ──────────────────────────────────────────── */}
+      <div className="mt-2 flex gap-1">
+        {[1, 2, 3, 4, 5].map((n) => (
+          <Star key={n} filled={n <= 3} />
+        ))}
+      </div>
+
+      {/* tags row ───────────────────────────────────────────── */}
+      <div className="mt-4 flex flex-wrap gap-2">
+        {["Hobby 01", "Hobby 01", "Hobby 01", "Hobby", "H", "H", "H"].map(
+          (tag) => (
+            <span
+              key={tag + Math.random()}
+              className="rounded-[14px] border border-[#C4CBDC]/60 bg-[#F6F9FF] px-4 py-1 text-xs font-medium text-[#1F2937]/80"
+            >
+              {tag}
+            </span>
+          )
+        )}
+      </div>
+    </div>
+  );
+}
+
+/* helper star component */
+function Star({ filled }: { filled: boolean }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-5 w-5"
+      viewBox="0 0 20 20"
+      fill={filled ? "#3C79D5" : "none"}
+      stroke={filled ? "#3C79D5" : "#C4CBDC"}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        d="M10 2.5l2.47 5.01 5.53.8-4 3.9.94 5.49L10 15.1l-4.94 2.6.94-5.49-4-3.9 5.53-.8L10 2.5z"
+      />
+    </svg>
+  );
+}
