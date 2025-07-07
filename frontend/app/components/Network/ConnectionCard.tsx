@@ -7,16 +7,17 @@ export default function ConnectionCard() {
       {/* top row ─────────────────────────────────────────────── */}
       <div className="flex items-start gap-4">
         <Avatar />
-        {/* <img src="public/default-avatar.svg" /> */}
 
-        {/* name + company */}
-        <div className="flex-1">
+        <ul className="justify-center items-center">
           <h3 className="font-semibold text-lg leading-tight">Generic Name</h3>
-          <p className="text-sm leading-tight">Company: Name</p>
-          <p className="text-sm text-[#1F2937]/70 leading-tight">
-            Job Title: Name
-          </p>
-        </div>
+
+          <li>
+            <span className="text-sm ">Company: Name</span>
+          </li>
+          <li>
+            <span className="text-sm">Job-Title: Name</span>
+          </li>
+        </ul>
 
         {/* external-link icon */}
         <button
