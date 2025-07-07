@@ -1,29 +1,13 @@
 import React from "react";
 import { Avatar } from "./ConnectionCard/Avatar";
-
-type Props = {
-  name?: string;
-  company: string;
-  jobTitle: string;
-  avatarUrl: string;
-  connectionLvl: number;
-  tags: string[];
-};
-export default function ConnectionCard(
-  name,
-  company,
-  jobTitle,
-  avatarUrl,
-  connectionLvl,
-  tags
-) {
+// TODO add props var
+export default function ConnectionCard() {
   return (
-    <div className="w-[700px] max-w-full rounded-[18px] border border-[#C4CBDC]/60 bg-white shadow-sm px-6 py-4">
+    <div className="--border rounded-box border-[#C4CBDC]/60 bg-white shadow-sm px-6 py-4">
       {/* top row ─────────────────────────────────────────────── */}
       <div className="flex items-start gap-4">
-        {/* avatar */}
-        <Avatar src={avatarUrl} />
-        <img src="public/default-avatar.svg" />
+        <Avatar />
+        {/* <img src="public/default-avatar.svg" /> */}
 
         {/* name + company */}
         <div className="flex-1">

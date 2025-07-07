@@ -28,14 +28,14 @@
   /* border radius */
   --radius-selector: 1rem;
   --radius-field: 0.25rem;
-  --radius-box: 0.5rem;
+  --radius-box: 1.125rem;
 
   /* base sizes */
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
 
   /* border size */
-  --border: 1px;
+  --border: 2px;
 
   /* effects */
   --depth: 1;
