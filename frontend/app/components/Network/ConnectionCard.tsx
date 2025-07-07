@@ -1,45 +1,97 @@
 import React from "react";
-// TODO import relevant assets
-
-const ConnectionCard = () => {
+import { Avatar } from "./ConnectionCard/Avatar";
+// TODO add props var
+export default function ConnectionCard() {
   return (
-    // TODO remove tmp's and properly add var
-    <div>
-      {/* top section of card */}
-      {/* TODO check div or section mos aproppriate tag */}
-      <section>
-        <h3>
-          NameTMP
-          {/* Name var here */}
-        </h3>
-        {/* TODO may remove Edit icon potentially */}
-        <button>
-          <img src="" alt="TMP edit icon" />
-        </button>
-      </section>
-
-      {/* Mid Section */}
-      <section>
-        {/* TODO revise approach for displaying */}
-        <div>
-          <img src="" alt="profile img TMP" />
-          <span>Company TMP</span>
-          <span>Job Tittle TMP</span>
+    // TODO add hoever effect but maybe on ul instead?
+    <div className="list-row  shadow-md">
+      <div className="flex flex-col">
+        {/* Main row ─────────────────────────────────────────────── */}
+        <div className="flex justify-between h-fill w-full">
+          {/* Left col */}
+          <div className="flex flex-row gap-4 mb-6">
+            <Avatar />
+            <ul>
+              <h3 className="font-semibold text-lg leading-tight">
+                Generic Name
+              </h3>
+              <li>
+                <span className="text-sm ">Company: Name</span>
+              </li>
+              <li>
+                <span className="text-sm">Job-Title: Name</span>
+              </li>
+            </ul>
+          </div>
+          {/* Right col  */}
+          <div className="flex flex-col gap h-full justify-between">
+            <button
+              aria-label="Open profile"
+              className="text-[#6A9BE4] hover:text-[#3C79D5] w-fit h-fit place-self-end"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M14 3h7v7m0-7L10 14m-1 7h-7v-7"
+                />
+              </svg>
+            </button>
+            {/* rating row ──────────────────────────────────────────── */}
+            {/* TODO rework rating system this is tmp visual */}
+            <div className=" flex gap-1 w-fit h-fit mb-1.5">
+              {[1, 2, 3, 4, 5].map((n) => (
+                <Star key={n} filled={n <= 3} />
+              ))}
+            </div>
+          </div>
         </div>
-      </section>
-
-      {/* Bottom Section */}
-      <section>
-        {/* Tag list */}
-        <ul>{/* TODO add call to tag icon creation */}</ul>
-
-        {/* TODO expand or indicate if more tags then space on card to be displayed ...?*/}
-        <button>
-          <img src="" alt="TMP expand tag icon" />
-        </button>
-      </section>
+        {/* tags row ───────────────────────────────────────────── */}
+        <div className="relative max-w-full overflow-hidden">
+          <div className="overflow-hidden whitespace-nowrap flex gap-2 w-full">
+            {["Hobby 01", "Hobby 01", "Hobby 01", "Hobby", "H", "H", "H"].map(
+              (tag) => (
+                <span
+                  key={tag + Math.random()}
+                  className="bg-primary text-primary-content px-2 py-1 rounded-full inline-block"
+                >
+                  {tag}
+                </span>
+              )
+            )}
+          </div>
+          {/* TODO refine fade out tag fx */}
+          {/* tags fade out fx */}
+          <div className="absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-white to-transparent pointer-events-none" />
+        </div>
+      </div>
     </div>
   );
-};
+}
 
-export default ConnectionCard;
+/* helper star component */
+function Star({ filled }: { filled: boolean }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-5 w-5"
+      viewBox="0 0 20 20"
+      fill={filled ? "#3C79D5" : "none"}
+      stroke={filled ? "#3C79D5" : "#C4CBDC"}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        d="M10 2.5l2.47 5.01 5.53.8-4 3.9.94 5.49L10 15.1l-4.94 2.6.94-5.49-4-3.9 5.53-.8L10 2.5z"
+      />
+    </svg>
+  );
+}

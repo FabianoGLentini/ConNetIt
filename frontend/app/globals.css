@@ -4,9 +4,9 @@
   name: "connetit";
   default: true;
   
-  --color-base-100: oklch(98% 0.02 240);
+  --color-base-100: oklch(1 0 0);
   --color-base-200: oklch(95% 0.03 240);
-  --color-base-300: oklch(92% 0.04 240);
+  --color-base-300: oklch(0.8419 0.0249 267.9);
   --color-base-content: oklch(20% 0.05 240);
   --color-primary: oklch(55% 0.3 240);
   --color-primary-content: oklch(98% 0.01 240);
@@ -25,10 +25,11 @@
   --color-error: oklch(65% 0.3 30);
   --color-error-content: oklch(98% 0.01 30);
 
+
   /* border radius */
   --radius-selector: 1rem;
   --radius-field: 0.25rem;
-  --radius-box: 0.5rem;
+  --radius-box: 1.125rem;
 
   /* base sizes */
   --size-selector: 0.25rem;
@@ -39,13 +40,41 @@
 
   /* effects */
   --depth: 1;
+
 }
 
 
 :root:has(input.theme-controller[value=connetit]:checked),[data-theme="connetit"] {
+    /* TODO delete color ref comment */
   /* --background: #ffffff;
   --foreground: #1F2937;
   --primary: #3C79D5;
   --primary-border: #6A9BE4;
   --border-fade: #C4CBDC; */
+
+  /* @Override .list */
+.list {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875rem /* 14px */;
+    gap: 8px;
+    :where(.list-row) {
+        --list-grid-cols: minmax(0, auto) 1fr; /*  TODO REMOVE ONCE DONE Unused forlist-row*/
+        background-color: var(--color-base-100);
+        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        gap: calc(0.1rem /* 3px */ * 3) /* 1rem = 16px */;
+        border-radius: var(--radius-box) var(--radius-box);
+        border: solid var(--color-base-300);
+        padding: calc(0.2rem /* 2px */ * 3) /* 1rem = 16px */;
+        word-break: break-word;
+        grid-template-columns: auto;
+        &:has(.list-col-grow:nth-child(1)) {
+            --list-grid-cols: 1fr;
+        }
+    }
 }
+
+}
+

@@ -4,7 +4,7 @@ const ConnectionInfoDisplay = () => {
   return (
     // TODO implment
     // TODO deside if edit connnection will create new window...?
-    <div className="hero bg-base-200 min-h-screen col-span-2">
+    <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content text-center">
         <div className="">
           <h1 className="text-5xl font-bold">Hello there</h1>

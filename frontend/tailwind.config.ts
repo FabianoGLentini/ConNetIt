@@ -11,12 +11,7 @@ const config: Config = {
 
   theme: {
     extend: {
-      colors: {
-        // backround: "var(--backround)",
-        // forground: "var(--forground)",
-        // primary: "var(--primary)",
-
-      },
+      
     },
   },
   plugins: [],
