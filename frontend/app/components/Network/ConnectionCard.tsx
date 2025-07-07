@@ -48,12 +48,13 @@ export default function ConnectionCard() {
       </div>
 
       {/* tags row ───────────────────────────────────────────── */}
-      <div className="mt-4 flex flex-wrap gap-2">
+      <div className="mt-4 flex flex-wrap gap-2 card-actions justify-end">
+        {/* TODO tmp must replace with appropriate tag import variables */}
         {["Hobby 01", "Hobby 01", "Hobby 01", "Hobby", "H", "H", "H"].map(
           (tag) => (
             <span
               key={tag + Math.random()}
-              className="rounded-[14px] border border-[#C4CBDC]/60 bg-[#F6F9FF] px-4 py-1 text-xs font-medium text-[#1F2937]/80"
+              className="badge badge-outline badge-primary"
             >
               {tag}
             </span>
