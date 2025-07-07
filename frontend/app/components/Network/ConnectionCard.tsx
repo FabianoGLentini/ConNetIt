@@ -3,7 +3,7 @@ import { Avatar } from "./ConnectionCard/Avatar";
 // TODO add props var
 export default function ConnectionCard() {
   return (
-    <div className="--border rounded-box border-[#C4CBDC]/60 bg-white shadow-sm px-6 py-4">
+    <div>
       {/* top row ─────────────────────────────────────────────── */}
       <div className="flex items-start gap-4">
         <Avatar />

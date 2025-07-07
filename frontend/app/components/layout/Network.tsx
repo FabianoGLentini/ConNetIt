@@ -9,7 +9,7 @@ const Network = () => {
 
     <section>
       <ul className="list rounded-box bg-base-100 shadow-md ">
-        <li>
+        <li className="list-row">
           <ConnectionCard />
         </li>
 
