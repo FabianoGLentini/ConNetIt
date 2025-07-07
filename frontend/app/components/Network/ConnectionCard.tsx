@@ -48,18 +48,21 @@ export default function ConnectionCard() {
       </div>
 
       {/* tags row ───────────────────────────────────────────── */}
-      <div className="mt-4 flex flex-wrap gap-2 card-actions justify-end">
-        {/* TODO tmp must replace with appropriate tag import variables */}
-        {["Hobby 01", "Hobby 01", "Hobby 01", "Hobby", "H", "H", "H"].map(
-          (tag) => (
-            <span
-              key={tag + Math.random()}
-              className="badge badge-outline badge-primary"
-            >
-              {tag}
-            </span>
-          )
-        )}
+
+      <div className="relative max-w-full overflow-hidden">
+        <div className="mt-3 overflow-hidden whitespace-nowrap flex gap-2 w-full">
+          {["Hobby 01", "Hobby 01", "Hobby 01", "Hobby", "H", "H", "H"].map(
+            (tag) => (
+              <span
+                key={tag + Math.random()}
+                className="bg-primary text-primary-content px-2 py-1 rounded-full inline-block"
+              >
+                {tag}
+              </span>
+            )
+          )}
+        </div>
+        <div className="absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-white to-transparent pointer-events-none" />
       </div>
     </div>
   );
