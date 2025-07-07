@@ -3,11 +3,13 @@ import { Avatar } from "./ConnectionCard/Avatar";
 // TODO add props var
 export default function ConnectionCard() {
   return (
+    // TODO add hoever effect but maybe on ul instead?
     <div className="list-row  shadow-md">
       <div className="flex flex-col">
-        {/* top row ─────────────────────────────────────────────── */}
-        <div className="flex justify-between">
-          <div className="flex flex-row gap-4 ">
+        {/* Main row ─────────────────────────────────────────────── */}
+        <div className="flex justify-between h-fill w-full">
+          {/* Left col */}
+          <div className="flex flex-row gap-4 mb-6">
             <Avatar />
             <ul>
               <h3 className="font-semibold text-lg leading-tight">
@@ -21,11 +23,11 @@ export default function ConnectionCard() {
               </li>
             </ul>
           </div>
-          {/* external-link icon */}
-          <div>
+          {/* Right col  */}
+          <div className="flex flex-col gap h-full justify-between">
             <button
               aria-label="Open profile"
-              className="text-[#6A9BE4] hover:text-[#3C79D5]"
+              className="text-[#6A9BE4] hover:text-[#3C79D5] w-fit h-fit place-self-end"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +45,8 @@ export default function ConnectionCard() {
               </svg>
             </button>
             {/* rating row ──────────────────────────────────────────── */}
-            <div className="mt-2 flex gap-1">
+            {/* TODO rework rating system this is tmp visual */}
+            <div className=" flex gap-1 w-fit h-fit mb-1.5">
               {[1, 2, 3, 4, 5].map((n) => (
                 <Star key={n} filled={n <= 3} />
               ))}
@@ -52,7 +55,7 @@ export default function ConnectionCard() {
         </div>
         {/* tags row ───────────────────────────────────────────── */}
         <div className="relative max-w-full overflow-hidden">
-          <div className="mt-3 overflow-hidden whitespace-nowrap flex gap-2 w-full">
+          <div className="overflow-hidden whitespace-nowrap flex gap-2 w-full">
             {["Hobby 01", "Hobby 01", "Hobby 01", "Hobby", "H", "H", "H"].map(
               (tag) => (
                 <span
@@ -64,6 +67,8 @@ export default function ConnectionCard() {
               )
             )}
           </div>
+          {/* TODO refine fade out tag fx */}
+          {/* tags fade out fx */}
           <div className="absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-white to-transparent pointer-events-none" />
         </div>
       </div>

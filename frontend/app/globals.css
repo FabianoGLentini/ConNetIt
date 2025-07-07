@@ -59,7 +59,7 @@
     font-size: 0.875rem /* 14px */;
     gap: 8px;
     :where(.list-row) {
-        --list-grid-cols: minmax(0, auto) 1fr;
+        --list-grid-cols: minmax(0, auto) 1fr; /*  TODO REMOVE ONCE DONE Unused forlist-row*/
         background-color: var(--color-base-100);
         position: relative;
         display: grid;
@@ -67,7 +67,7 @@
         gap: calc(0.1rem /* 3px */ * 3) /* 1rem = 16px */;
         border-radius: var(--radius-box) var(--radius-box);
         border: solid var(--color-base-300);
-        padding: calc(0.2rem /* 2px */ * 4) /* 1rem = 16px */;
+        padding: calc(0.2rem /* 2px */ * 3) /* 1rem = 16px */;
         word-break: break-word;
         grid-template-columns: auto;
         &:has(.list-col-grow:nth-child(1)) {
