@@ -7,7 +7,7 @@ export default function ConnectionCard() {
     <div className="list-row  shadow-md">
       <div className="flex flex-col">
         {/* Main row ─────────────────────────────────────────────── */}
-        <div className="flex justify-between h-fill w-full">
+        <div className="flex justify-between h-fill w-fill">
           {/* Left col */}
           <div className="flex flex-row gap-4 mb-6">
             <Avatar />
