@@ -1,6 +1,6 @@
 import Network from "./components/layout/Network";
 import NavBar from "./components/layout/NavBar";
-import SearchFilter from "./components/layout/SearchFilter";
+import SearchFilterSideBar from "./components/layout/SearchFilterSideBar";
 import ConnectionInfoDisplay from "./components/layout/ConnectionInfoDisplay";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     // TODO how to properly lay out each section
     <div data-theme="connetit" className="grid grid-cols-5 max-h-screen">
       {/* TODO left section */}
-      <SearchFilter />
+      <SearchFilterSideBar />
       <section className="col-span-4">
         {/* TODO mid section */}
 
