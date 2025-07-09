@@ -37,7 +37,7 @@ const DropDownFilter = ({ title, options }: DropDownFilterProps) => {
 
       {/* TODO transition max-h- may cause issues as we add more and more companies, might need to set up scroll style if to much? */}
       <ul
-        className={`grid overflow-hidden transition-all duration-200  ${
+        className={`pl-3.5 grid  overflow-hidden transition-all duration-200  ${
           accordionOpen
             ? "visible opacity-100 max-h-500 ease-in"
             : "invisible max-h-0 opacity-0 ease-out"
