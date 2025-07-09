@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import DropDown from "../SearchFilterSideBar/DropDown";
+import DropDownFilter from "../SearchFilterSideBar/DropDown";
+// import { FilterOption } from "@/app/types/filters";
 
 export default function SearchFilterSideBar() {
   return (
@@ -17,11 +18,20 @@ export default function SearchFilterSideBar() {
       <div className="flex flex-col w-full gap-2 p-1">
         {/* Filters */}
         <h2 className="font-bold w-fill mb-2">Filters:</h2>
-        {/* <span>Company</span> */}
-        <DropDown />
-        {/* <span>Hobbies</span> */}
-        <DropDown />
-        {/* Tag Pills */}
+        {/* TODO replace tmp map method options input */}
+        <DropDownFilter
+          title="Company"
+          options={[
+            {
+              label: "Fill tmp 01",
+              value: "tmp val",
+              onClick: () => console.log("tmp"),
+            },
+          ]}
+        />
+        {/* <DropDown /> */}
+
+        {/*         
         <div className="flex flex-wrap gap-2">
           {Array.from({ length: 9 }).map((_, i) => (
             <div
@@ -31,7 +41,7 @@ export default function SearchFilterSideBar() {
               Hobby 01
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </aside>
   );

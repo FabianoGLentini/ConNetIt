@@ -1,6 +1,12 @@
 import React, { useState } from "react";
+import { FilterOption } from "@/app/types/filters";
 
-const DropDown = () => {
+interface DropDownFilterProps {
+  title: string;
+  options: FilterOption[];
+}
+
+const DropDownFilter = ({ title, options }: DropDownFilterProps) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
   return (
     <div>
@@ -8,7 +14,7 @@ const DropDown = () => {
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between w-full h-fit cursor-pointer align-baseline"
       >
-        <span>Filter Section TMP</span>
+        <span>{title}</span>
         <span
           className={` transition-all flex justify-center ${accordionOpen ? "rotate-90" : ""}`}
         >
@@ -29,19 +35,22 @@ const DropDown = () => {
         </span>
       </button>
 
+      {/* TODO transition max-h- may cause issues as we add more and more companies, might need to set up scroll style if to much? */}
       <ul
-        className={`grid overflow-hidden transition-all duration-250 ease-in-out ${
+        className={`grid overflow-hidden transition-all duration-200  ${
           accordionOpen
-            ? "visible opacity-100 max-h-30"
-            : "invisible max-h-0 opacity-0"
+            ? "visible opacity-100 max-h-40 ease-in"
+            : "invisible max-h-0 opacity-0 ease-out"
         }`}
       >
-        <li className="overflow-hidden">Inside view</li>
-        <li className="overflow-hidden">Inside view</li>
-        <li className="overflow-hidden">Inside view</li>
+        {options.map((option, i) => (
+          <li key={i}>
+            <button>{option.label}</button>
+          </li>
+        ))}
       </ul>
     </div>
   );
 };
 
-export default DropDown;
+export default DropDownFilter;
