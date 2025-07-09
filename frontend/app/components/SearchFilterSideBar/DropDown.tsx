@@ -39,7 +39,7 @@ const DropDownFilter = ({ title, options }: DropDownFilterProps) => {
       <ul
         className={`grid overflow-hidden transition-all duration-200  ${
           accordionOpen
-            ? "visible opacity-100 max-h-40 ease-in"
+            ? "visible opacity-100 max-h-500 ease-in"
             : "invisible max-h-0 opacity-0 ease-out"
         }`}
       >

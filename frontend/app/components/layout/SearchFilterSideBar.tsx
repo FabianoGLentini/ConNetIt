@@ -18,30 +18,44 @@ export default function SearchFilterSideBar() {
       <div className="flex flex-col w-full gap-2 p-1">
         {/* Filters */}
         <h2 className="font-bold w-fill mb-2">Filters:</h2>
-        {/* TODO replace tmp map method options input */}
+
         <DropDownFilter
           title="Company"
-          options={[
-            {
-              label: "Fill tmp 01",
+          options={
+            // TODO use propper backend fn for getting arr
+
+            Array.from({ length: 9 }).map((_, i) => ({
+              label: `Fill tmp 0${i}`,
               value: "tmp val",
               onClick: () => console.log("tmp"),
-            },
-          ]}
+            }))
+          }
         />
-        {/* <DropDown /> */}
+        <DropDownFilter
+          title="Job Title"
+          options={
+            // TODO use propper backend fn for getting arr
 
-        {/*         
-        <div className="flex flex-wrap gap-2">
-          {Array.from({ length: 9 }).map((_, i) => (
-            <div
-              key={i}
-              className="bg-base-100 px-4 py-1 rounded-full text-sm text-base-content"
-            >
-              Hobby 01
-            </div>
-          ))}
-        </div> */}
+            Array.from({ length: 6 }).map((_, i) => ({
+              label: `Fill tmp 0${i}`,
+              value: "tmp val",
+              onClick: () => console.log("tmp"),
+            }))
+          }
+        />
+
+        <DropDownFilter
+          title="Hobbies"
+          options={
+            // TODO use propper backend fn for getting arr
+
+            Array.from({ length: 20 }).map((_, i) => ({
+              label: `Fill tmp 0${i}`,
+              value: "tmp val",
+              onClick: () => console.log("tmp"),
+            }))
+          }
+        />
       </div>
     </aside>
   );
