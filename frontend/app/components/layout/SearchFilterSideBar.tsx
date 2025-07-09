@@ -15,16 +15,11 @@ export default function SearchFilterSideBar() {
       />
 
       {/* Filters */}
-      <DropDown />
       <h2 className="font-bold w-fill mb-2">Filters:</h2>
-      <div className="flex flex-col gap-2 mb-4">
-        <div className="flex justify-between items-center cursor-pointer">
-          <span>Company</span>
-        </div>
-        <div className="flex justify-between items-center cursor-pointer">
-          <span>Hobbies</span>
-        </div>
-      </div>
+      {/* <span>Company</span> */}
+      <DropDown />
+      {/* <span>Hobbies</span> */}
+      <DropDown />
 
       {/* Tag Pills */}
       <div className="flex flex-wrap gap-2">
