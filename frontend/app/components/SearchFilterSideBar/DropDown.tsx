@@ -27,34 +27,13 @@ const DropDown = () => {
             />
           </svg>
         </span>
-
-        {/* {accordionOpen ? (
-          <span>tmp -</span>
-        ) : (
-          <span className="flex justify-center">
-            <svg
-              width="8"
-              viewBox="0 0 11 19"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.85324 16.6636L9.03153 9.48531L1.85324 2.30702"
-                stroke="#333333"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </span>
-        )} */}
       </button>
 
       <ul
-        className={`grid overflow-hidden transition-all duration-500 ease-in-out ${
+        className={`grid overflow-hidden transition-all duration-250 ease-in-out ${
           accordionOpen
-            ? "visible opacity-100 h-fit"
-            : "invisible max-height h-0 opacity-0"
+            ? "visible opacity-100 max-h-30"
+            : "invisible max-h-0 opacity-0"
         }`}
       >
         <li className="overflow-hidden">Inside view</li>
