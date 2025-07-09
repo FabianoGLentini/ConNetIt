@@ -14,23 +14,24 @@ export default function SearchFilterSideBar() {
         className="input input-bordered w-full rounded-full bg-base-100 mb-6"
       />
 
-      {/* Filters */}
-      <h2 className="font-bold w-fill mb-2">Filters:</h2>
-      {/* <span>Company</span> */}
-      <DropDown />
-      {/* <span>Hobbies</span> */}
-      <DropDown />
-
-      {/* Tag Pills */}
-      <div className="flex flex-wrap gap-2">
-        {Array.from({ length: 9 }).map((_, i) => (
-          <div
-            key={i}
-            className="bg-base-100 px-4 py-1 rounded-full text-sm text-base-content"
-          >
-            Hobby 01
-          </div>
-        ))}
+      <div className="flex flex-col w-full gap-2 p-1">
+        {/* Filters */}
+        <h2 className="font-bold w-fill mb-2">Filters:</h2>
+        {/* <span>Company</span> */}
+        <DropDown />
+        {/* <span>Hobbies</span> */}
+        <DropDown />
+        {/* Tag Pills */}
+        <div className="flex flex-wrap gap-2">
+          {Array.from({ length: 9 }).map((_, i) => (
+            <div
+              key={i}
+              className="bg-base-100 px-4 py-1 rounded-full text-sm text-base-content"
+            >
+              Hobby 01
+            </div>
+          ))}
+        </div>
       </div>
     </aside>
   );
