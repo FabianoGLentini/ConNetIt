@@ -36,7 +36,7 @@
   --size-field: 0.25rem;
 
   /* border size */
-  --border: 1px;
+  --border: solid var(--color-base-300);
 
   /* effects */
   --depth: 1;
@@ -59,6 +59,8 @@
 
   }
 
+
+
   /* @Override .list */
 .list {
     display: flex;
@@ -73,7 +75,7 @@
         grid-auto-flow: column;
         gap: calc(0.1rem /* 3px */ * 3) /* 1rem = 16px */;
         border-radius: var(--radius-box) var(--radius-box);
-        border: solid var(--color-base-300);
+        border: var(--border);
         padding: calc(0.2rem /* 2px */ * 3) /* 1rem = 16px */;
         word-break: break-word;
         grid-template-columns: auto;

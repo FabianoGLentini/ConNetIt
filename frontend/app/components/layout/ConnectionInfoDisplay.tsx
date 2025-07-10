@@ -8,13 +8,11 @@ const hobbies = ["Hobby 01", "Hobby 01", "Hobby 01", "Hobby 01", "Hobby 01"];
 
 const ConnectionDisplayBar = () => {
   return (
-    <div className="w-full min-h-screen border border-blue-200 p-4 shadow-sm bg-base-100 space-y-4">
+    <div className="w-full min-h-screen border-l-4 p-4 shadow-sm border-base-300 bg-base-100 space-y-4">
       {/* Edit icon */}
       <div className="flex justify-end">
         {/* <FiEdit2 className="text-blue-300 text-xl" /> */}
       </div>
-
-      {/* Avatar */}
 
       <div className="flex justify-center">
         <Avatar width="w-40" />
@@ -23,15 +21,7 @@ const ConnectionDisplayBar = () => {
       {/* Name + Rating */}
       <div className="text-center">
         <h2 className="font-bold text-lg">Generic Name</h2>
-        {/* <div className="flex justify-center mt-1">
-          {stars.map((filled, idx) =>
-            filled ? (
-              <FaStar key={idx} className="text-blue-400" />
-            ) : (
-              <FaRegStar key={idx} className="text-blue-300" />
-            )
-          )}
-        </div> */}
+        <span>star tmp</span>
       </div>
 
       {/* Company & Job */}

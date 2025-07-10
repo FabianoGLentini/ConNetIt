@@ -7,7 +7,9 @@ interface Sizing {
 export const Avatar = ({ width = "w-20" }: Sizing) => {
   return (
     <div className="avatar">
-      <div className={`${width} rounded-full border-2  bg-gray-200`}>
+      <div
+        className={`${width} rounded-full border-2 border-base-300   bg-gray-200`}
+      >
         <svg
           viewBox="0 0 176 176"
           fill="none"
