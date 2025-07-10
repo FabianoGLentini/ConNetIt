@@ -1,4 +1,5 @@
 import React from "react";
+import { Avatar } from "../Network/ConnectionCard/Avatar";
 // import { FaStar, FaRegStar } from "react-icons/fa";
 // import { FiEdit2, FiPlus } from "react-icons/fi";
 
@@ -14,10 +15,9 @@ const ConnectionDisplayBar = () => {
       </div>
 
       {/* Avatar */}
+
       <div className="flex justify-center">
-        <div className="w-24 h-24 rounded-full bg-gray-200 flex items-center justify-center">
-          <div className="text-4xl text-gray-400">👤</div>
-        </div>
+        <Avatar width="w-40" />
       </div>
 
       {/* Name + Rating */}

@@ -10,7 +10,7 @@ export default function ConnectionCard() {
         <div className="flex justify-between h-fill w-fill">
           {/* Left col */}
           <div className="flex flex-row gap-4 mb-6">
-            <Avatar />
+            <Avatar width="20" />
             <ul>
               <h3 className="font-semibold text-lg leading-tight">
                 Generic Name
