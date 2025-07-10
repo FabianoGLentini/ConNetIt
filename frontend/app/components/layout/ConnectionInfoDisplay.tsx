@@ -1,5 +1,6 @@
 import React from "react";
 import { Avatar } from "../Network/ConnectionCard/Avatar";
+import { ConnectionLvl } from "../assets/ConnectionLvl";
 // import { FaStar, FaRegStar } from "react-icons/fa";
 // import { FiEdit2, FiPlus } from "react-icons/fi";
 
@@ -19,9 +20,9 @@ const ConnectionDisplayBar = () => {
       </div>
 
       {/* Name + Rating */}
-      <div className="text-center">
+      <div className="text-center flex flex-col items-center">
         <h2 className="font-bold text-lg">Generic Name</h2>
-        <span>star tmp</span>
+        <ConnectionLvl />
       </div>
 
       {/* Company & Job */}
