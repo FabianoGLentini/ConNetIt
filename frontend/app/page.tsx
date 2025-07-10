@@ -15,8 +15,8 @@ export default function Home() {
 
         <NavBar />
 
-        <section className="grid grid-cols-5">
-          <div className="col-span-3">
+        <section className="grid grid-cols-6">
+          <div className="col-span-4">
             <Network />
           </div>
           <div className="col-span-2">
