@@ -5,20 +5,21 @@ import { BurgerIcon } from "./NavBar/BurgerIcon";
 
 const NavBar = () => {
   return (
-    <nav className="navbar bg-base-100 shadow-sm col-span-6">
+    <nav className="navbar border-b-4 bg-base-100 border-base-300 col-span-6">
       <div className="flex-2">
         {/* TODO remove button styling...? */}
-        <h1 className="text-xl">ConNetIt</h1>
+        <h1 className="text-xl">Account Name</h1>
         <h2 className="text-lg">Network</h2>
       </div>
 
-      {/* TODO adjus properly */}
-      <span>Add Connection +</span>
+      {/* TODO adjus properly maybe set to be part of the list section instead */}
+      {/* <span>Add Connection +</span> */}
 
       <div className="flex-none">
         {/* TODO remove arrow and style burger menu properly */}
         <ul className="menu menu-horizontal px-1">
           <li>
+            {/* TODO fix up menu burger set up */}
             <details>
               <summary>
                 <BurgerIcon />
