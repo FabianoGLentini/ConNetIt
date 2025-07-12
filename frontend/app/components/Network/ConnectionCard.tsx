@@ -1,8 +1,16 @@
 import React from "react";
 import { Avatar } from "./ConnectionCard/Avatar";
 import { ConnectionLvl } from "../assets/ConnectionLvl";
-// TODO add props var
-export default function ConnectionCard() {
+// TODO adjust props var for propper connection hook up
+interface Props {
+  name: string;
+  email: string;
+  phone: string;
+}
+
+// TODO Polish for our purposes
+// TODO instead of defaul character use initials and random color set up
+export default function ConnectionCard({ name, email, phone }: Props) {
   return (
     // TODO add hoever effect but maybe on ul instead?
     <div className="list-row  shadow-md">
@@ -13,14 +21,12 @@ export default function ConnectionCard() {
           <div className="flex flex-row gap-4 mb-6">
             <Avatar width="w-20" />
             <ul>
-              <h3 className="font-semibold text-lg leading-tight">
-                Generic Name
-              </h3>
+              <h3 className="font-semibold text-lg leading-tight">{name}</h3>
               <li>
-                <span className="text-sm ">Company: Name</span>
+                <span className="text-sm ">Company: {email}</span>
               </li>
               <li>
-                <span className="text-sm">Job-Title: Name</span>
+                <span className="text-sm">Job-Title: {phone}</span>
               </li>
             </ul>
           </div>

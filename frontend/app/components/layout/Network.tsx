@@ -2,6 +2,8 @@ import React from "react";
 import ConnectionCard from "../Network/ConnectionCard";
 // import { Connection } from "@/app/types/Connection";
 // import Connection from "@/app/types/Connection";
+
+// TODO tmp might be better to have it accessible for more then just network section
 interface User {
   id: number;
   name: string;
@@ -11,6 +13,7 @@ interface User {
   website: string;
 }
 
+// TODO may be better to have it available to implement in more section maybe?
 interface Props {
   users: User[];
 }
@@ -25,9 +28,8 @@ const Network: React.FC<Props> = ({ users }) => {
       <ul className="list p-2  ">
         {/* TODO tmp example method set up List */}
         {users.map((user) => (
-          <li>
+          <li key={user.id}>
             <ConnectionCard
-              key={user.id}
               name={user.name}
               email={user.email}
               phone={user.phone}
