@@ -8,17 +8,18 @@ const Network = () => {
     // TODO replace current conection info with connection card component
 
     <section>
-      <ul className="list rounded-box bg-base-100 p-2">
+      <ul className="list p-2">
         <li>
           <ConnectionCard />
         </li>
 
-        <li className="">
+        <li>
           <ConnectionCard />
         </li>
 
         <li className="list-row">
           <div>
+            {/* TODO optimize img */}
             <img
               className="size-10 rounded-box"
               src="https://img.daisyui.com/images/profile/demo/3@94.webp"
