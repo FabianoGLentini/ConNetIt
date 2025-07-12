@@ -3,7 +3,15 @@ import NavBar from "./components/layout/NavBar";
 import SearchFilterSideBar from "./components/layout/SearchFilterSideBar";
 import ConnectionInfoDisplay from "./components/layout/ConnectionInfoDisplay";
 
-export default function Home() {
+interface User {
+    
+}
+
+export default async function Home() {
+  // TODO confirm that this is appropriate set up for fetch
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const users = await res.json();
+
   return (
     // TODO check if using fragment best practice
     // TODO how to properly lay out each section

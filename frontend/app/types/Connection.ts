@@ -4,8 +4,6 @@ export interface Connection {
     company: string
     jobTitle: string;
     description: string;
-    // hobbiesSet: set...?
-
-
+    hobbiesSet: string[];
 
 }
