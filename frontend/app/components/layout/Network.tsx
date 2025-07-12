@@ -1,7 +1,10 @@
 import React from "react";
 import ConnectionCard from "../Network/ConnectionCard";
+import { Connection } from "@/app/types/Connection";
+// import Connection from "@/app/types/Connection";
+import { UsersTMP } from "@/app/types/UsersTMP";
 
-const Network = () => {
+const Network = (userstmp: User[]) => {
   return (
     // TODO card display, so call opon car method and lay it out vertically in fix sizing?
 
@@ -9,6 +12,10 @@ const Network = () => {
 
     <section className="h-full overflow-y-scroll max-h-screen scrollbar-custom">
       <ul className="list p-2  ">
+        {/* TODO tmp example method set up List */}
+        {userstmp.map((user: User) => (
+          <li key={user.id}> {user.name}</li>
+        ))}
         <li>
           <ConnectionCard />
         </li>
