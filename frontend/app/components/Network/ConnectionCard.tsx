@@ -59,6 +59,7 @@ export default function ConnectionCard({ name, email, phone }: Props) {
         {/* tags row ───────────────────────────────────────────── */}
         <div className="relative max-w-full overflow-hidden">
           <div className="overflow-hidden whitespace-nowrap flex gap-2 w-full">
+            {/* TODO rework for appropriate access and hoby set up / creation */}
             {["Hobby 01", "Hobby 01", "Hobby 01", "Hobby", "H", "H", "H"].map(
               (tag) => (
                 <span

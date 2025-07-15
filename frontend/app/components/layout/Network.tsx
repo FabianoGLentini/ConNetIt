@@ -20,8 +20,6 @@ interface Props {
 
 const Network: React.FC<Props> = ({ users }) => {
   return (
-    // TODO card display, so call opon car method and lay it out vertically in fix sizing?
-
     // TODO replace current conection info with connection card component
 
     <section className="h-full overflow-y-scroll max-h-screen scrollbar-custom">
@@ -45,24 +43,3 @@ const Network: React.FC<Props> = ({ users }) => {
 };
 
 export default Network;
-
-// // components/layout/Network.tsx
-// import React from "react";
-// import ConnectionCard from "../network/connectioncard/ConnectionCard";
-
-// const Network: React.FC<Props> = ({ users }) => {
-//   return (
-//     <div className="space-y-2 p-4 overflow-y-scroll max-h-full">
-//       {users.map((user) => (
-//         <ConnectionCard
-//           key={user.id}
-//           name={user.name}
-//           email={user.email}
-//           phone={user.phone}
-//         />
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default Network;
